@@ -59,7 +59,7 @@
     <H2>Listar Funcionarios</H2>
 
     <?php
-    include("../conexao.php")
+    include("../conexao.php");
     $SQL = mysqli_query($conexao,"select * from funcionario")
     or die(mysqli_error($conexao));
     $linha = mysqli_fetch_assoc($SQL);
