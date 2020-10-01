@@ -18,7 +18,7 @@
         <a class="navbar-brand" href="#">
             <img src="../img/icone.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> Sistema
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-togglie="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -59,7 +59,7 @@
     <H2>Listar Funcionarios</H2>
 
     <?php
-    include("../conexao.php")
+    include("../conexao.php");
     $SQL = mysqli_query($conexao,"select * from funcionario")
     or die(mysqli_error($conexao));
     $linha = mysqli_fetch_assoc($SQL);
